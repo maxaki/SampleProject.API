@@ -267,3 +267,10 @@ pub/
 
 #Ignore logs folder
 Logs
+
+#Ignore gitignore
+.gitignore
+/.github/
+
+#Ignore IDE specific
+/src/.idea/
