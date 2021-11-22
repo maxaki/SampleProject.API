@@ -82,15 +82,6 @@ namespace SampleProject.API
         {
             app.UseMiddleware<CorrelationMiddleware>();
 
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseProblemDetails();
-            }
-
             app.UseRouting();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
